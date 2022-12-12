@@ -1,0 +1,81 @@
+@keyframes gradient {
+  0% {
+    background-position: 0%
+  }
+
+  100% {
+    background-position: 100%
+  }
+}
+
+:root {
+  --primary-font: "Capture", Helvetica, sans-serif;
+  --secondary-font: "Grenze Gotisch", cursive;
+  --text-color: #000;
+  --white-color: #FFF;
+  --lime-color: #f3ffd4;
+  --secondary-color: #2400FF;
+  --fade-in-effect: fadein 800ms;
+  font-size: calc(1em + 0.5vw);
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation: var(--fade-in-effect);
+  -moz-animation: var(--fade-in-effect);
+  -ms-animation: var(--fade-in-effect);
+  -o-animation: var(--fade-in-effect);
+  animation: var(--fade-in-effect);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+::selection {}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+  background-color: lavender;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  /* width: calc(50% + 0.5vw); */
+}
+
+section.layout {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+iframe, img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: -0.9em;
+  background: linear-gradient(127deg, #9c27b0, #ff0000, #FEBDFF);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  color: green;
+  font-family: sans-serif;
+  mix-blend-mode: initial;
+  box-shadow: rgb(4 213 19 / 9%) 0px 2px 1px, rgb(101 255 11 / 9%) 0px 4px 2px, rgb(0 255 52 / 9%) 0px 8px 4px, rgb(35 255 0 / 9%) 0px 16px 8px, rgb(66 255 0 / 9%) 0px 32px 16px;
+}
