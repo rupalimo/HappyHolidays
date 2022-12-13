@@ -99,6 +99,7 @@ a {
   padding-bottom: 0.75em;
   border-radius: 0 0 0.75em 0.75em;
   border-style: none solid solid solid;
+  transform: translateY(-1px);
 }
 
 a:hover {
