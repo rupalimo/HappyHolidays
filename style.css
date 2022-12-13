@@ -61,21 +61,31 @@ iframe, img {
   height: auto;
 }
 
-h1 {
-  font-style: italic;
-  font-size: 2em;
-  text-align: center;
-  font-weight: normal;
+span {
   width: 100%;
   position: fixed;
   z-index: 100;
-  top: -0.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h1 {
   background: linear-gradient(127deg, #9c27b0, #ff0000, #FEBDFF);
   background-size: 600% 100%;
   animation: gradient 16s linear infinite;
   animation-direction: alternate;
-  color: green;
+  margin: 0;
+  padding: 0.5em;
+}
+
+h1, a {
+  /* font-style: italic; */
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  color: #7815de;
   font-family: sans-serif;
   mix-blend-mode: initial;
-  box-shadow: rgb(4 213 19 / 9%) 0px 2px 1px, rgb(101 255 11 / 9%) 0px 4px 2px, rgb(0 255 52 / 9%) 0px 8px 4px, rgb(35 255 0 / 9%) 0px 16px 8px, rgb(66 255 0 / 9%) 0px 32px 16px;
 }
